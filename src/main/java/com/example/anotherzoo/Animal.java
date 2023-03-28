@@ -18,4 +18,20 @@ public class Animal {
         System.out.println(this.name + " is now "+ this.weight + " kg");
 
     }
+
 }
+
+//public class Animal implements Flyer {
+//    public Dragon occupant;
+//
+//    public Animal(Dragon occupant){
+//        this.occupant = occupant;
+//
+//    }
+//    public void fly(){
+//        System.out.println(this.occupant.name + " is flying!")
+//    }
+//    public void roost(){
+//        System.out.println(this.occupant.name + " is resting with a flock!");
+//    }
+//}

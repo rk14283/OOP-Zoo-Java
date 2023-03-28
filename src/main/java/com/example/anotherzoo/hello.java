@@ -11,47 +11,56 @@ public class hello {
         String dragonName = ReadLineDragon.nextLine();
 
         //create animal class that inherits traits of animal
-         Dragon dragon = new Dragon(dragonName,200,new Date());
-        System.out.println(dragon);
-        dragon.breatheFire();
-        dragon.eat();
+         //Dragon dragon = new Dragon(dragonName,200,new Date());
+        Dragon dragon = new Dragon(dragonName);
+        //System.out.println(dragon);
+        //dragon.breatheFire();
+       // dragon.eat();
+        dragon.fly();
+        dragon.roost();
 
 
         Scanner ReadLineOctopus = new Scanner(System.in);
         System.out.println("Enter name of the octopus");
-
+//
         String octopusName =ReadLineOctopus.nextLine();
-        Octopus octopus = new Octopus(octopusName, 50, new Date());
-        System.out.println(octopus);
-        octopus.swim();
-        octopus.eat();
-
+        Octopus octopus = new Octopus(octopusName);
+        octopus.constrict();
+//        Octopus octopus = new Octopus(octopusName, 50, new Date());
+//        System.out.println(octopus);
+//        octopus.swim();
+//        octopus.eat();
+//
         Scanner ReadLineCobra = new Scanner(System.in);
         System.out.println("Enter name of the cobra");
-
-        String cobraName =ReadLineCobra.nextLine();
-        Cobra cobra = new Cobra(cobraName, 10, new Date());
-        System.out.println(cobra);
-        cobra.bite();
-        cobra.eat();
-
+//
+       String cobraName =ReadLineCobra.nextLine();
+        Cobra cobra = new Cobra(cobraName);
+//        Cobra cobra = new Cobra(cobraName, 10, new Date());
+//        System.out.println(cobra);
+//        cobra.bite();
+//        cobra.eat();
+        cobra.constrict();
         Scanner ReadLineBat = new Scanner(System.in);
         System.out.println("Enter name of the bat");
 
         String batName =ReadLineBat.nextLine();
-        Bat bat = new Bat(batName, 5, new Date());
-        System.out.println(bat);
-        bat.useSonar();
-        bat.eat();
-
-        Scanner ReadLineRhino = new Scanner(System.in);
-        System.out.println("Enter name of the rhino");
-
-        String rhinoName =ReadLineRhino.nextLine();
-        Rhino rhino = new Rhino(rhinoName, 500, new Date());
-        System.out.println(rhino);
-        rhino.charge();
-        rhino.eat();
+        //Bat bat = new Bat(batName, 5, new Date());
+        Bat bat = new Bat(batName);
+        bat.fly();
+        bat.roost();
+        //System.out.println(bat);
+        //bat.useSonar();
+      //  bat.eat();
+//
+//        Scanner ReadLineRhino = new Scanner(System.in);
+//        System.out.println("Enter name of the rhino");
+//
+//        String rhinoName =ReadLineRhino.nextLine();
+//        Rhino rhino = new Rhino(rhinoName, 500, new Date());
+//        System.out.println(rhino);
+//        rhino.charge();
+//        rhino.eat();
 
 
     }
